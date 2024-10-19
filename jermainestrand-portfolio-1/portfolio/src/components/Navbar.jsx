@@ -1,7 +1,7 @@
 const styles = {
     navbar: {
-        backgroundColor: "#333",
-        color: "rgb(65, 164, 225)",
+        backgroundColor: "#c21809",
+        color: "#333",
         padding: "10px",
         display: "flex",
         justifyContent: "space-between",
