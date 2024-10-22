@@ -14,7 +14,7 @@ const styles = {
     }
 };
 
-function Navbar() {
+
     return (
         <nav style={styles.navbar}>
             <h1>Jermaine Strand</h1>
