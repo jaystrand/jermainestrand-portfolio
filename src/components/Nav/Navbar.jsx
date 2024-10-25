@@ -1,3 +1,6 @@
+import React from 'react';
+import './navbar.css';
+
 const styles = {
     navbar: {
         backgroundColor: "#c21809",
@@ -14,16 +17,17 @@ const styles = {
     }
 };
 
-
+const Navbar = () => {
     return (
         <nav style={styles.navbar}>
             <h1>Jermaine Strand</h1>
-            <ul>
-                <li>Home</li>
+            <ul>                
                 <li>About</li>
                 <li>Projects</li>
                 <li>Contact</li>
             </ul>
         </nav>
     );
-}
+};
+
+export default Navbar;
