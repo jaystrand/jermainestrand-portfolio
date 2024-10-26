@@ -1,6 +1,5 @@
-// src/App.tsx
 import React, { useState } from 'react';
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import Navigation from './components/Navigation';
 import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
@@ -29,14 +28,11 @@ const App: React.FC = () => {
 
       <footer className="footer">
         <div className="socialLinks">
-          <a href="https://github.com/username" target="_blank" rel="noopener noreferrer" className="socialLink">
-            <Github />
+          <a href="https://github.com/jaystrand" target="_blank" rel="noopener noreferrer" className="socialLink" title="GitHub Profile">
+            <FaGithub />
           </a>
-          <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" className="socialLink">
-            <Linkedin />
-          </a>
-          <a href="https://twitter.com/username" target="_blank" rel="noopener noreferrer" className="socialLink">
-            <Twitter />
+          <a href="https://www.linkedin.com/in/jermaine-strand" target="_blank" rel="noopener noreferrer" className="socialLink" title="LinkedIn Profile">
+            <FaLinkedin />
           </a>
         </div>
       </footer>
@@ -45,3 +41,4 @@ const App: React.FC = () => {
 };
 
 export default App;
+
