@@ -1,4 +1,3 @@
-// src/components/Portfolio.tsx
 import React from 'react';
 import '../styles/styles.tsx';
 import ProjectCard from './ProjectCard';
@@ -13,29 +12,29 @@ interface Project {
 const projects: Project[] = [
     {
         title: 'Personnel Tracker',
-        image: '/api/placeholder/300x200.png',
-        deployedUrl: 'https://project1.example.com',
+        image: 'src/assets/projects/personnel_tracker.png',
+        deployedUrl: 'https://drive.google.com/file/d/1eIb1ubckSZ5zZpBun0bo8SUO8SrGnbLv/view',
         githubUrl: 'https://github.com/jaystrand/personnel-tracker',
     },
     {
         title: 'Weather Dashboard',
         image: '/src/assets/projects/image.png',
-        deployedUrl: 'https://project2.example.com',
+        deployedUrl: '',
         githubUrl: 'https://github.com/jaystrand/weather_dashboard',
     },
     {
         title: 'Vehicle Builder',
-        image: '/api/placeholder/300x200.png',
-        deployedUrl: 'https://project3.example.com',
+        image: 'src/assets/projects/vehicle_builder.png',
+        deployedUrl: 'https://drive.google.com/file/d/1ZyGVwx5sDHte0k7S9uHzffpc7wtDApka/view',
         githubUrl: 'https://github.com/jaystrand/vehicle-builder',
     },
     {
         title: 'Readme Generator',
         image: '/api/placeholder/300x200.png',
-        deployedUrl: 'https://project4.example.com',
+        deployedUrl: '',
         githubUrl: 'https://github.com/jaystrand/readme-generator',
     },
-    // Add other projects
+   
 ];
 
 const Portfolio: React.FC = () => (
