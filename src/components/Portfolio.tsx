@@ -1,6 +1,10 @@
 import React from 'react';
 import '../styles/styles.tsx';
 import ProjectCard from './ProjectCard';
+// Import your images
+import personnelTrackerImg from '../assets/projects/personnel_tracker.png';
+import weatherDashboardImg from '../assets/projects/image.png';
+import vehicleBuilderImg from '../assets/projects/vehicle_builder.png';
 
 interface Project {
     title: string;
@@ -12,19 +16,19 @@ interface Project {
 const projects: Project[] = [
     {
         title: 'Personnel Tracker',
-        image: 'src/assets/projects/personnel_tracker.png',
+        image: personnelTrackerImg,  // Use the imported image
         deployedUrl: 'https://drive.google.com/file/d/1eIb1ubckSZ5zZpBun0bo8SUO8SrGnbLv/view',
         githubUrl: 'https://github.com/jaystrand/personnel-tracker',
     },
     {
         title: 'Weather Dashboard',
-        image: '/src/assets/projects/image.png',
+        image: weatherDashboardImg,  // Use the imported image
         deployedUrl: '',
         githubUrl: 'https://github.com/jaystrand/weather_dashboard',
     },
     {
         title: 'Vehicle Builder',
-        image: 'src/assets/projects/vehicle_builder.png',
+        image: vehicleBuilderImg,  // Use the imported image
         deployedUrl: 'https://drive.google.com/file/d/1ZyGVwx5sDHte0k7S9uHzffpc7wtDApka/view',
         githubUrl: 'https://github.com/jaystrand/vehicle-builder',
     },
@@ -34,7 +38,6 @@ const projects: Project[] = [
         deployedUrl: '',
         githubUrl: 'https://github.com/jaystrand/readme-generator',
     },
-   
 ];
 
 const Portfolio: React.FC = () => (
