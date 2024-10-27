@@ -2,9 +2,9 @@ import React from 'react';
 import '../styles/styles.tsx';
 import ProjectCard from './ProjectCard';
 // Import your images
-import personnelTrackerImg from '../assets/projects/personnel_tracker.png';
-import weatherDashboardImg from '../assets/projects/image.png';
-import vehicleBuilderImg from '../assets/projects/vehicle_builder.png';
+import personnelTrackerImg from 'src/assets/projects/personnel_tracker.png';
+import weatherDashboardImg from 'src/assets/projects/image.png';
+import vehicleBuilderImg from 'src/assets/projects/vehicle_builder.png';
 
 interface Project {
     title: string;
