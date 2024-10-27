@@ -1,6 +1,6 @@
 import React from 'react';
-// Remove the absolute path import
-// Instead, use a relative path if importing, or reference from public folder
+// Import the image if using the src/assets approach
+import avatarImg from '../assets/images/Avatar.png';  // Adjust path based on your file location
 
 const styles = {
     backgroundContainer: {
@@ -24,27 +24,29 @@ const styles = {
 };
 
 const AboutMe = () => {
-    // Log the process.env to debug
-    console.log('Environment:', process.env.NODE_ENV);
-    // You can also try using the public URL
-    const imagePath = process.env.NODE_ENV === 'production' 
-        ? '/images/Avatar.png'
-        : '/images/Avatar.png';
-
     return (
         <div style={styles.backgroundContainer}>
             <div style={styles.contentWrapper}>
                 <div className="flex flex-col items-center mb-6">
-                    <img
-                        src={imagePath}
+                    {/* Option 1: If image is in public/images */}
+                    {/* <img
+                        src={`${process.env.PUBLIC_URL}/images/Avatar.png`}
                         alt="Developer"
                         className="w-32 h-32 rounded-full mb-4 object-cover"
                         onError={(e) => {
                             console.error('Image failed to load:', e);
-                            // Optionally set a fallback image
-                            e.currentTarget.src = '/images/fallback.png';
                         }}
+                    /> */}
+
+                    {/* OR Option 2: If using imported image from src/assets */}
+                    
+                    <img
+                        src={avatarImg}
+                        alt="Developer"
+                        className="w-32 h-32 rounded-full mb-4 object-cover"
                     />
+                   
+
                     <h2 className="text-2xl font-bold text-gray-800">Jermaine Strand</h2>
                 </div>
             </div>
