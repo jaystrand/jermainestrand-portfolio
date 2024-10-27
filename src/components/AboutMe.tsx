@@ -1,4 +1,6 @@
 import React from 'react';
+import avatarImage from '../assets/projects/Avatar.png';
+
 
 const styles = {
   backgroundContainer: {
@@ -26,11 +28,12 @@ const AboutMe = () => {
     <div style={styles.backgroundContainer}>
       <div style={styles.contentWrapper}>
         <div className="flex flex-col items-center mb-6">
-          <img 
-            src="../assets/projects/Avatar.png" 
-            alt="Developer" 
-            className="w-32 h-32 rounded-full mb-4 object-cover"
-          />
+        <img 
+  src={avatarImage} 
+  alt="Developer" 
+  className="w-32 h-32 rounded-full mb-4 object-cover"
+/>
+
           <h2 className="text-2xl font-bold text-gray-800">Jermaine Strand</h2>
         </div>
         <p className="text-gray-600 leading-relaxed mb-4">
