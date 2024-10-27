@@ -1,12 +1,9 @@
 import React from 'react';
-import avatarImage from '../assets/projects/Avatar.png';
-import backgroundImage from '../assets/projects/Avatar.png';
-
-
+import avatarImage from '../assets/projects/Avatar.png';  // Import the image
 
 const styles = {
     backgroundContainer: {
-        backgroundImage: `url(${backgroundImage})`,
+        backgroundImage: "url('your-background-image-url.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -31,25 +28,13 @@ const AboutMe = () => {
             <div style={styles.contentWrapper}>
                 <div className="flex flex-col items-center mb-6">
                     <img
-                        src={avatarImage}
+                        src="/images/Avatar.png"  // Reference from public folder
                         alt="Developer"
                         className="w-32 h-32 rounded-full mb-4 object-cover"
                     />
-
                     <h2 className="text-2xl font-bold text-gray-800">Jermaine Strand</h2>
                 </div>
-                <p className="text-gray-600 leading-relaxed mb-4">
-                    Full-Stack Developer specializing in scalable web applications and intuitive user experiences. I combine modern frontend frameworks with robust backend solutions to deliver impactful digital products.
-                </p>
-                <div className="space-y-2">
-                    <h3 className="font-semibold text-gray-800">Core Competencies:</h3>
-                    <ul className="list-disc pl-5 space-y-1 text-gray-600">
-                        <li>Frontend Development: React, JavaScript, HTML5, CSS3</li>
-                        <li>Backend Development: Node.js, AWS Cloud Services</li>
-                        <li>Database Design: PostgreSQL, SQL</li>
-                        <li>Version Control & Collaboration: GitHub</li>
-                    </ul>
-                </div>
+                {/* Rest of your component */}
             </div>
         </div>
     );
