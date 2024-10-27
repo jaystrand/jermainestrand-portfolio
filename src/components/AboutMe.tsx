@@ -1,5 +1,6 @@
 import React from 'react';
-import avatarImage from '../assets/projects/Avatar.png';  // Import the image
+// Remove the absolute path import
+// Instead, use a relative path if importing, or reference from public folder
 
 const styles = {
     backgroundContainer: {
@@ -28,13 +29,12 @@ const AboutMe = () => {
             <div style={styles.contentWrapper}>
                 <div className="flex flex-col items-center mb-6">
                     <img
-                        src="/images/Avatar.png"  // Reference from public folder
+                        src="/images/Avatar.png"  // This is correct if the image is in public/images
                         alt="Developer"
                         className="w-32 h-32 rounded-full mb-4 object-cover"
                     />
                     <h2 className="text-2xl font-bold text-gray-800">Jermaine Strand</h2>
                 </div>
-                {/* Rest of your component */}
             </div>
         </div>
     );
