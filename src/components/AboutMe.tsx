@@ -24,14 +24,26 @@ const styles = {
 };
 
 const AboutMe = () => {
+    // Log the process.env to debug
+    console.log('Environment:', process.env.NODE_ENV);
+    // You can also try using the public URL
+    const imagePath = process.env.NODE_ENV === 'production' 
+        ? '/images/Avatar.png'
+        : '/images/Avatar.png';
+
     return (
         <div style={styles.backgroundContainer}>
             <div style={styles.contentWrapper}>
                 <div className="flex flex-col items-center mb-6">
                     <img
-                        src="/images/Avatar.png"  // This is correct if the image is in public/images
+                        src={imagePath}
                         alt="Developer"
                         className="w-32 h-32 rounded-full mb-4 object-cover"
+                        onError={(e) => {
+                            console.error('Image failed to load:', e);
+                            // Optionally set a fallback image
+                            e.currentTarget.src = '/images/fallback.png';
+                        }}
                     />
                     <h2 className="text-2xl font-bold text-gray-800">Jermaine Strand</h2>
                 </div>
@@ -39,5 +51,3 @@ const AboutMe = () => {
         </div>
     );
 };
-
-export default AboutMe;
