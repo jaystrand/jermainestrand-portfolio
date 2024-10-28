@@ -10,13 +10,17 @@ const Resume: React.FC = () => (
 </a>
         </div>
         <div>
-            <h3>Technical Proficiencies</h3>
+            <h3>Front-End Technical Proficiencies</h3>
             <ul className="proficienciesList">
-                <li>Frontend Development: React, JavaScript, HTML5, CSS3</li>
-                <li>Framework/Libraries: React</li>
-                <li>Backend Development: Node.js</li>
-                <li>Database Design: PostgreSQL, SQL</li>
-                <li>Version Control & Collaboration: Git, GitHub, GitLab</li>
+                <li><strong>Languages</strong>: JavaScript, TypeScript, HTML5, CSS3</li>
+                <li><strong>Frameworks/Libraries</strong>: React</li>
+                <li><strong>Version Control & Collaboration</strong>: Git, GitHub, GitLab</li>
+            </ul>
+            
+            <h3>Back-End Technical Proficiencies</h3>
+            <ul className="proficienciesList">
+                <li><strong>Languages</strong>: TypeScript (Node.js)</li>
+                <li><strong>Database Design</strong>: PostgreSQL, SQL</li>
             </ul>
         </div>
     </div>
