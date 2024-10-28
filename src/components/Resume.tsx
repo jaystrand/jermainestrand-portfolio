@@ -1,13 +1,13 @@
-// src/components/Resume.tsx
 import React from 'react';
 import '../styles/styles.tsx';
+
 
 const Resume: React.FC = () => (
     <div className="resumeSection">
         <div className="downloadResume">
-            <a href="src/assets/projects/resume.docx" download className="button">
-                My Resume
-            </a>
+        <a href="/resume.docx" download className="button">
+    My Resume
+</a>
         </div>
         <div>
             <h3>Technical Proficiencies</h3>
