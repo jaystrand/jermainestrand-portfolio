@@ -13,9 +13,10 @@ const Resume: React.FC = () => (
             <h3>Technical Proficiencies</h3>
             <ul className="proficienciesList">
                 <li>Frontend Development: React, JavaScript, HTML5, CSS3</li>
-                <li>Backend Development: Node.js, AWS Cloud Services</li>
+                <li>Framework/Libraries: React</li>
+                <li>Backend Development: Node.js</li>
                 <li>Database Design: PostgreSQL, SQL</li>
-                <li>Version Control & Collaboration: GitHub</li>
+                <li>Version Control & Collaboration: Git, GitHub, GitLab</li>
             </ul>
         </div>
     </div>
