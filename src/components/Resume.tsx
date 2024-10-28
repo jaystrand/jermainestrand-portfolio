@@ -5,7 +5,7 @@ import '../styles/styles.tsx';
 const Resume: React.FC = () => (
     <div className="resumeSection">
         <div className="downloadResume">
-            <a href="src/assets/projects/Resume.docx" download className="button">
+            <a href="src/assets/projects/resume.docx" download className="button">
                 My Resume
             </a>
         </div>
