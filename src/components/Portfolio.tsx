@@ -3,7 +3,7 @@ import '../styles/styles.tsx';
 import ProjectCard from './ProjectCard';
 // Import your images
 import personnelTrackerImg from '../assets/projects/personnel_tracker.png';
-import weatherDashboardImg from '../assets/projects/image.png';
+import codeProImg from '../assets/projects/image-1.png';
 import vehicleBuilderImg from '../assets/projects/vehicle_builder.png';
 
 interface Project {
@@ -16,19 +16,19 @@ interface Project {
 const projects: Project[] = [
     {
         title: 'Personnel Tracker',
-        image: personnelTrackerImg,  // Use the imported image
+        image: personnelTrackerImg,  
         deployedUrl: 'https://drive.google.com/file/d/1eIb1ubckSZ5zZpBun0bo8SUO8SrGnbLv/view',
         githubUrl: 'https://github.com/jaystrand/personnel-tracker',
     },
     {
-        title: 'Weather Dashboard',
-        image: weatherDashboardImg,  // Use the imported image
-        deployedUrl: '',
-        githubUrl: 'https://github.com/jaystrand/weather_dashboard',
+        title: 'Code Pro',
+        image: codeProImg,  
+        deployedUrl: 'src/assets/projects/screen-capture (1).webm',
+        githubUrl: 'https://github.com/jaystrand/code-pro',
     },
     {
         title: 'Vehicle Builder',
-        image: vehicleBuilderImg,  // Use the imported image
+        image: vehicleBuilderImg,  
         deployedUrl: 'https://drive.google.com/file/d/1ZyGVwx5sDHte0k7S9uHzffpc7wtDApka/view',
         githubUrl: 'https://github.com/jaystrand/vehicle-builder',
     },
