@@ -32,12 +32,7 @@ const projects: Project[] = [
         deployedUrl: 'https://drive.google.com/file/d/1ZyGVwx5sDHte0k7S9uHzffpc7wtDApka/view',
         githubUrl: 'https://github.com/jaystrand/vehicle-builder',
     },
-    {
-        title: 'Readme Generator',
-        image: '/api/placeholder/300x200.png',
-        deployedUrl: '',
-        githubUrl: 'https://github.com/jaystrand/readme-generator',
-    },
+
 ];
 
 const Portfolio: React.FC = () => (
