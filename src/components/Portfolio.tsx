@@ -23,7 +23,7 @@ const projects: Project[] = [
     {
         title: 'Code Pro',
         image: codeProImg,  
-        deployedUrl: 'src/assets/projects/screen-capture (1).webm',
+        deployedUrl: 'https://drive.google.com/uc?id=1bv5M5TbI5RXYVA19MNblm-v3e2-ZM6dz&export=download',
         githubUrl: 'https://github.com/jaystrand/code-pro',
     },
     {
