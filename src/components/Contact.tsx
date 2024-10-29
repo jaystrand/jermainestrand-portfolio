@@ -25,7 +25,7 @@ const Contact: React.FC = () => {
         <div className="contact-item">
           <span className="label">Phone:</span>
           <a 
-            href="tel:+1234567890" 
+            href="tel:+12672501503" 
             className="value link"
           >
             (267) 250-1503
