@@ -1,73 +1,72 @@
 /* Contact.css */
 .contact-section {
-    padding: 2rem;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .contact-section h2 {
-    text-align: center;
-    color: black;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-  }
-  
-  .contact-card {
-    background-color: #00008B;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-section h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.contact-card {
+  background-color: #00008B;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.contact-item:hover {
+  background-color: black;
+}
+
+.contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.label {
+  font-weight: 600;
+  min-width: 120px;
+  color: #666;
+}
+
+.value {
+  color: white;
+}
+
+.link {
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: #0052a3;
+  text-decoration: underline;
+}
+
+/* Add some basic responsiveness */
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 1rem;
   }
   
   .contact-item {
-    display: flex;
-    margin-bottom: 1.5rem;
-    padding: 0.5rem;
-    border-radius: 4px;
-    transition: background-color 0.2s ease;
-  }
-  
-  .contact-item:hover {
-    background-color: black;
-  }
-  
-  .contact-item:last-child {
-    margin-bottom: 0;
+    flex-direction: column;
   }
   
   .label {
-    font-weight: 600;
-    min-width: 120px;
-    color: #666;
+    margin-bottom: 0.25rem;
   }
-  
-  .value {
-    color: white;
-  }
-  
-  .link {
-    color: #0066cc;
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-  
-  .link:hover {
-    color: #0052a3;
-    text-decoration: underline;
-  }
-  
-  /* Add some basic responsiveness */
-  @media (max-width: 480px) {
-    .contact-section {
-      padding: 1rem;
-    }
-    
-    .contact-item {
-      flex-direction: column;
-    }
-    
-    .label {
-      margin-bottom: 0.25rem;
-    }
-  }
-
+}
