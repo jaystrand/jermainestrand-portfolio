@@ -8,15 +8,12 @@ interface NavigationProps {
 }
 
 const Navigation: React.FC<NavigationProps> = ({ currentSection, setCurrentSection }) => (
-  <nav style={styles.nav}>
+  <nav className="nav">
     {['about', 'portfolio', 'contact', 'resume'].map((section) => (
       <button
         key={section}
         onClick={() => setCurrentSection(section as 'about' | 'portfolio' | 'contact' | 'resume')}
-        style={{
-          ...styles.navButton,
-          ...(currentSection === section ? styles.navButtonActive : {}),
-        }}
+        className={`navButton ${currentSection === section ? 'navButtonActive' : ''}`}
       >
         {section.charAt(0).toUpperCase() + section.slice(1)}
       </button>
