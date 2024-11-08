@@ -1,4 +1,5 @@
 import React from 'react';
+import myImage from '../assets/projects/Avatar.png';
 
 const styles = {
   backgroundContainer: {
@@ -27,7 +28,7 @@ const AboutMe = () => {
       <div style={styles.contentWrapper}>
         <div className="flex flex-col items-center mb-6">
           <img 
-            src="src/assets/projects/Avatar.png" 
+            src={myImage} 
             alt="Developer" 
             className="w-32 h-32 rounded-full mb-4 object-cover"
           />

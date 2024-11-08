@@ -1,6 +1,10 @@
 import React from 'react';
 import '../styles/styles.tsx';
 import ProjectCard from './ProjectCard';
+// Import your images
+import personnelTrackerImg from '../assets/projects/personnel_tracker.png';
+import codeProImg from '../assets/projects/image-1.png';
+import vehicleBuilderImg from '../assets/projects/vehicle_builder.png';
 
 interface Project {
     title: string;
@@ -12,29 +16,23 @@ interface Project {
 const projects: Project[] = [
     {
         title: 'Personnel Tracker',
-        image: 'src/assets/projects/personnel_tracker.png',
+        image: personnelTrackerImg,  
         deployedUrl: 'https://drive.google.com/file/d/1eIb1ubckSZ5zZpBun0bo8SUO8SrGnbLv/view',
         githubUrl: 'https://github.com/jaystrand/personnel-tracker',
     },
     {
-        title: 'Weather Dashboard',
-        image: '/src/assets/projects/image.png',
-        deployedUrl: '',
-        githubUrl: 'https://github.com/jaystrand/weather_dashboard',
+        title: 'Code Pro',
+        image: codeProImg,  
+        deployedUrl: 'https://drive.google.com/uc?id=1bv5M5TbI5RXYVA19MNblm-v3e2-ZM6dz&export=download',
+        githubUrl: 'https://github.com/jaystrand/code-pro',
     },
     {
         title: 'Vehicle Builder',
-        image: 'src/assets/projects/vehicle_builder.png',
+        image: vehicleBuilderImg,  
         deployedUrl: 'https://drive.google.com/file/d/1ZyGVwx5sDHte0k7S9uHzffpc7wtDApka/view',
         githubUrl: 'https://github.com/jaystrand/vehicle-builder',
     },
-    {
-        title: 'Readme Generator',
-        image: '/api/placeholder/300x200.png',
-        deployedUrl: '',
-        githubUrl: 'https://github.com/jaystrand/readme-generator',
-    },
-   
+
 ];
 
 const Portfolio: React.FC = () => (
