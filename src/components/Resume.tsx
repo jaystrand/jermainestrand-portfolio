@@ -1,13 +1,18 @@
 import React from 'react';
 import '../styles/styles.tsx';
 
-
 const Resume: React.FC = () => (
     <div className="resumeSection">
         <div className="downloadResume">
-        <a href="src/assets/projects/resume.pdf" download className="button">
-    My Resume
-</a>
+            <a 
+                href="/resume.pdf" 
+                download 
+                className="button"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                My Resume
+            </a>
         </div>
         <div>
             <h3>Front-End Technical Proficiencies</h3>
