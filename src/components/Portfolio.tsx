@@ -6,7 +6,7 @@ import personnelTrackerImg from '../assets/projects/personnel_tracker.png';
 import codeProImg from '../assets/projects/image-1.png';
 import vehicleBuilderImg from '../assets/projects/vehicle_builder.png';
 import candidateSearchImg from '../assets/projects/candidate_search.jpg';
-import kanbanBoardImg from '../assets/projects/kanban_board.png';
+import kanbanBoardImg from '../assets/projects/kanban_board.jpg';
 
 interface Project {
     title: string;
