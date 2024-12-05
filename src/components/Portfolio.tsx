@@ -6,6 +6,7 @@ import personnelTrackerImg from '../assets/projects/personnel_tracker.png';
 import codeProImg from '../assets/projects/image-1.png';
 import vehicleBuilderImg from '../assets/projects/vehicle_builder.png';
 import candidateSearchImg from '../assets/projects/candidate_search.jpg';
+import kanbanBoardImg from '../assets/projects/kanban_board.png';
 
 interface Project {
     title: string;
@@ -38,6 +39,12 @@ const projects: Project[] = [
         image: candidateSearchImg,  
         deployedUrl: 'https://candidate-search-qt7g.onrender.com',
         githubUrl: 'https://github.com/jaystrand/candidate_search',
+    },
+    {
+        title: 'Kaban Krazy Board',
+        image: kanbanBoardImg,  
+        deployedUrl: 'https://kanban-board-p5di.onrender.com',
+        githubUrl: 'https://github.com/jaystrand/kanban_board',
     },
 
 ];
