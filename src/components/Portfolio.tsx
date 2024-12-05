@@ -5,6 +5,7 @@ import ProjectCard from './ProjectCard';
 import personnelTrackerImg from '../assets/projects/personnel_tracker.png';
 import codeProImg from '../assets/projects/image-1.png';
 import vehicleBuilderImg from '../assets/projects/vehicle_builder.png';
+import candidateSearchImg from '../assets/projects/candidate_search.jpg';
 
 interface Project {
     title: string;
@@ -31,6 +32,12 @@ const projects: Project[] = [
         image: vehicleBuilderImg,  
         deployedUrl: 'https://drive.google.com/file/d/1ZyGVwx5sDHte0k7S9uHzffpc7wtDApka/view',
         githubUrl: 'https://github.com/jaystrand/vehicle-builder',
+    },
+    {
+        title: 'Candidate Search',
+        image: candidateSearchImg,  
+        deployedUrl: 'https://candidate-search-qt7g.onrender.com',
+        githubUrl: 'https://github.com/jaystrand/candidate_search',
     },
 
 ];
